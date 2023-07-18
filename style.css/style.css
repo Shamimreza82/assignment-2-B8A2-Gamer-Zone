@@ -293,6 +293,62 @@ ul a {
     font-size: 16px;
 }
 
+/* Play Instantly,No Downloads No Installs. section start  */
+
+.downlode-container {
+    max-width: 1140px;
+    min-height: 500px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 80px;
+}
+
+.downlode-text {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.downlode-img {
+    width: 50%;
+}
+
+.downlode-img img {
+    width: 80%;
+    margin-left: 100px;
+}
+
+.d-text h1 {
+    font-size: 35px;
+    font-weight: 700;
+    text-align: right;
+}
+
+.play {
+    color: #F948B2;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.d-text p {
+    color: #534C64; 
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: right;
+    margin-top: 20px;
+}
+
+.d-img img {
+    width: 40%;
+    position: relative;
+    margin-top: -200px;
+    margin-left: -30px;
+}
+
+
+/* Play Games Online Anywhere, Anytime! section start */
 
 
 
@@ -301,6 +357,54 @@ ul a {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* _____________________________________________________ */
+
+/* <!-- careers section start --> */
+
+ .careers-container {
+    max-width: 1140px;
+    min-height: 500px;
+    margin: 0 auto;
+ }
+.careers-text {
+    width: 50%;
+}
+
+.careers-img {
+    width: 50%;
+}
+
+.para-career {
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------- */
 
 
 /* mobile devices */
@@ -314,33 +418,26 @@ ul a {
         justify-content: center;
         margin-top: 25px;
     }
-
-    .header-container {
+    .header-container,.downlode-container {
         flex-direction: column-reverse;
     }
-
     ul {
         width: 100%;
         margin-top: 20px;
     }
-
     li {
         margin-top:10px ;
     }
-
     .nav-button {
         margin-top: 15px;
     } 
-
     nav {
         box-shadow: 2px 2px 10px rgb(255, 255, 255);
     }
-
     .header-text, .header-img {
         width: 100%;
         padding: 20px;
     }
-
     .header-text1 {
         margin-left: 40px;
     }
@@ -350,10 +447,48 @@ ul a {
     }
     .cards-box {
         grid-template-columns: 1fr;
+        margin-left: 80px ;
     }
+    .c-box {
+        margin-top: 20px;
+    }
+
+    .downlode-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .d-text {
+        text-align: center;
+    }
+    .d-img img {
+        width: 40%;
+        margin-left: 30px;
+    } 
+
+    .downlode-img, .d-img1 {
+        width: 80%;
+    }
+/* ------------------Problem---------------------- */
+    .d-text h1 {
+        text-align: center;
+    }
+
+    .d-text p {
+        text-align: center;
+    }
+/* ------------------------------------- */
+
+
 
 
 }
+
+
+
+
+
+
 
 
 
@@ -384,7 +519,34 @@ ul a {
         text-align: center;
         width: 100%;
     }
+    .cards-box {
+        grid-template-columns: repeat(2,1fr);
+        margin-left: 80px ;
+    }
 
+    .c-box {
+        margin-top: 20px;
+    }
 
+    .downlode-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .d-text {
+        text-align: center;
+    }
+    .d-img img {
+        width: 40%;
+        margin-left: 30px;
+    } 
+
+    .downlode-img, .d-img1 {
+        width: 80%;
+    }
+
+    .downlode-container {
+        flex-direction: column-reverse;
+    }
 
 }
