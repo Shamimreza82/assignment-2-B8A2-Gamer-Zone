@@ -423,14 +423,43 @@ ul a {
 
 .multiple-games-container {
         max-width: 1140px;
-        min-height: 300px;
-        margin: 0 auto;
+        margin: 70px auto;
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        gap: 2%;
+        flex-wrap:wrap ;
 }
 
 .game-zone {
     display: flex;
     align-items: center;
+    height: 70%;
+    width: 100%;
+    background-color: #f8f7f7;
+    color: #000000;
+    border-radius: 50px;
+    padding: 10px;
 }
+
+.game-zone p {
+    padding-left: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.game-zone:hover {
+    border: 1px solid #FF42A5;
+    color: #FF42A5;
+    transition: 0.2s;
+    
+}
+
+.game-zone img {
+    width: 15%;
+}
+
+
+
 
 
 
@@ -541,6 +570,31 @@ ul a {
         font-size: 11px;
         padding-left: 40px;
     }
+    .multiple-games-container {
+        grid-template-columns: repeat(3,1fr);
+    }
+
+
+/* --------------------------- */
+
+.game-zone p {
+    padding-left: 20px;
+    font-size: 7px;
+    font-weight: 600;
+}
+
+.game-zone:hover {
+    border: 1px solid #FF42A5;
+    color: #FF42A5;
+}
+
+.game-zone img {
+    width: 10%;
+}
+
+
+
+
 
 
 }
@@ -633,6 +687,10 @@ ul a {
     .para-career p {
         line-height: 20px; 
         font-size: 15px;
+    }
+
+    .multiple-games-container {
+        grid-template-columns: repeat(3,1fr);
     }
 
 
