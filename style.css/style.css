@@ -21,3 +21,131 @@ body {
 
 /* nav section start */
 
+nav {
+    background: #FFF;
+    box-shadow: 2px 2px 10px rgb(235, 235, 235);
+}
+
+.nav-container{
+    max-width: 1140px;
+    margin: 0 auto;
+    min-height: 75px;
+    display: flex;
+    justify-content: space-between;
+    /* box-shadow: 2px 2px 10px black; */
+}
+
+.logo {
+    width: 50%;
+    display: flex;
+    justify-content: left;
+    align-items: center; 
+}
+
+.logo p {
+    font-size: 30px;
+    font-weight: 700;
+    padding-left: 10px;
+}
+
+.logo img {
+    width: 60px;
+}
+
+.G-icon {
+    background: #FF42A5 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+ul {
+    list-style: none;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+.nav-button {
+    width: 210px;
+    height: 45px;
+     padding: 5px 24px;
+     border-radius: 8px;
+     background: rgba(11, 2, 35, 0.10);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: #3C354F;
+     font-size: 1rem;
+     font-weight: 500;
+}
+
+ul a {
+    text-decoration: none;
+    color: #3C354F;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.fa-brands {
+    padding-left: 10px;
+}
+
+
+
+
+
+
+/* mobile devices */
+
+@media screen and (max-width: 576px) {
+    .nav-container, ul {
+        flex-direction: column;
+    }
+    .logo {
+        width: 100%;
+        justify-content: center;
+        margin-top: 25px;
+    }
+
+    ul {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    li {
+        margin-top:10px ;
+    }
+
+    .nav-button {
+        margin-top: 15px;
+    } 
+
+    nav {
+        box-shadow: 2px 2px 10px rgb(255, 255, 255);
+    }
+}
+
+
+
+/* Tab devices */
+
+@media screen and (min-width:576px) and (max-width:960px) {
+    
+.nav-container {
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+}
+
+    .nav-button {
+        margin-right: 10px;
+    }
+    li {
+        margin-left: 30px;
+    }
+    ul {
+        width: 100%;
+    }
+}
