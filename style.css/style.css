@@ -12,7 +12,20 @@ body {
 
 /* Common class  */
 
+.btn-primary {
+    padding: 15px 30px;
+    background-color: #FF42A5; 
+    border-radius: 48px;
+    border: none;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 15px;
+}
 
+.btn-second {
+    background-color: #4EC5F7; 
+}
 
 
 
@@ -92,7 +105,64 @@ ul a {
     padding-left: 10px;
 }
 
+/* header section start hear */
 
+.header-container {
+    max-width: 1140px;
+    min-height: 500px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.header-text {
+    width: 50%;
+    background-image: url(../images/Group14.png);
+    background-position: left;
+    background-size: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.header-img {
+    width: 50%
+}
+
+.header-img img {
+    width: 100%;
+}
+
+/* .header-text1 img {
+    display: flex;
+    display: block;
+} */
+
+.header-text1 h2 {
+    color: #0B0223;
+    font-weight: 600;
+    font-size: 35px;
+}
+.header-text1 h1 {
+    color: #4915d8;
+    font-weight: 1000;
+    font-size: 68px;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header-text1 p {
+    color: #534C64;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 4px;
+}
+
+
+/* .dot {
+    font-size: 95px;
+} */
 
 
 
@@ -100,13 +170,17 @@ ul a {
 /* mobile devices */
 
 @media screen and (max-width: 576px) {
-    .nav-container, ul {
+    .nav-container, ul  {
         flex-direction: column;
     }
     .logo {
         width: 100%;
         justify-content: center;
         margin-top: 25px;
+    }
+
+    .header-container {
+        flex-direction: column-reverse;
     }
 
     ul {
@@ -125,6 +199,16 @@ ul a {
     nav {
         box-shadow: 2px 2px 10px rgb(255, 255, 255);
     }
+
+    .header-text, .header-img {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .header-text1 {
+        margin-left: 40px;
+    }
+
 }
 
 
