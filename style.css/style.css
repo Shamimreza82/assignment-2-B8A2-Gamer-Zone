@@ -375,30 +375,62 @@ ul a {
 
 /* <!-- careers section start --> */
 
+.career {
+    background-color: #FF42A5;
+}
+
+
  .careers-container {
     max-width: 1140px;
     min-height: 500px;
-    margin: 0 auto;
+    margin: 100px auto 0;
+    display: flex;
+    justify-content: center;
  }
 .careers-text {
     width: 50%;
+    margin-top: 50px;
+    color: aliceblue;
 }
 
 .careers-img {
-    width: 50%;
+    width: 50%; 
 }
 
 .para-career {
     display: flex;
 }
 
+.careers-img img {
+    width: 120%;
+}
 
+.careers-text h1 {
+    font-size: 30px;
+    padding-bottom: 20px;
+}
 
+.career-para-text {
+    line-height: 30px; 
+    padding-bottom: 10px;
+}
 
+.para-career p {
+    line-height: 30px; 
+}
 
+/* multiple-games section start  */
 
+.multiple-games-container {
+        max-width: 1140px;
+        min-height: 300px;
+        margin: 0 auto;
+}
 
-
+.game-zone {
+    display: flex;
+    align-items: center;
+}
 
 
 
@@ -410,7 +442,7 @@ ul a {
 /* mobile devices */
 
 @media screen and (max-width: 576px) {
-    .nav-container, ul,.gamer-container  {
+    .nav-container, ul,.gamer-container, .careers-container  {
         flex-direction: column;
     }
     .logo {
@@ -469,7 +501,7 @@ ul a {
     .downlode-img, .d-img1 {
         width: 80%;
     }
-/* ------------------Problem---------------------- */
+
     .d-text h1 {
         text-align: center;
     }
@@ -477,9 +509,38 @@ ul a {
     .d-text p {
         text-align: center;
     }
-/* ------------------------------------- */
+    .careers-text {
+        width: 100%;
+        margin-top: 50px;
+        color: aliceblue;
+    }
+    
+    .careers-img img {
+        width: 200%; 
+    }
+    
+    .careers-text h1 {
+        font-size: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+    }
+    
+    .career-para-text {
+        line-height: 20px; 
+        padding-bottom: 10px;
+        font-size: 12px;
+        padding-left: 20px;
+    }
+    
+    .para-career p {
+        line-height: 20px; 
+        font-size: 15px;
+    }
 
-
+    .para2 p, .para1 p {
+        font-size: 11px;
+        padding-left: 40px;
+    }
 
 
 }
@@ -512,7 +573,7 @@ ul a {
         width: 100%;
     }
 
-    .gamer-container {
+    .gamer-container, .careers-container {
         flex-direction: column;
     }
     .game-text {
@@ -548,5 +609,31 @@ ul a {
     .downlode-container {
         flex-direction: column-reverse;
     }
+
+    .careers-text {
+        width: 100%;
+        margin-top: 50px;
+        color: aliceblue;
+    }
+    
+    .careers-img img {
+        width: 200%; 
+    }
+    
+    .careers-text h1 {
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .career-para-text {
+        line-height: 30px; 
+        padding-bottom: 10px;
+    }
+    
+    .para-career p {
+        line-height: 20px; 
+        font-size: 15px;
+    }
+
 
 }
