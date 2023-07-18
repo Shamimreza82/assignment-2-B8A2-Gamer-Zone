@@ -159,10 +159,44 @@ ul a {
     padding: 4px;
 }
 
+  /* gamer section start */
 
-/* .dot {
-    font-size: 95px;
-} */
+  .game-container {
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+  }
+
+  .gamer-container {
+    max-width: 1140px;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .gamer-img{
+    width: 70%;
+  }
+
+  .game-text {
+    text-align: right;
+  }
+  .game-text h1 {
+    font-size: 35px;
+    font-weight: 700;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+
+
+
+
+
+  
+
 
 
 
