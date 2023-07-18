@@ -167,7 +167,7 @@ ul a {
 
   .gamer-container {
     max-width: 1140px;
-    height: 500px;
+    min-height: 500px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -180,22 +180,124 @@ ul a {
 
   .game-text {
     text-align: right;
+    width: 50%;
   }
   .game-text h1 {
-    font-size: 35px;
+    font-size: 40px;
     font-weight: 700;
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    padding-bottom: 20px;
   }
 
+.gamer-img img {
+    width: 110%;
+}
+
+.btn-gamer {
+   margin: 20px 0;
+}
+
+
+
+
+/* online games section */
+
+
+.online-game-container {
+    max-width: 1140px;
+    min-height: 500px;
+    margin: 0 auto;
+}
+
+
+.online-game-container h1 {
+    color: #0B0223;
+    font-weight: 700;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.para-text {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.funny-video {
+    font-weight: 700;
+    font-size: 35px;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.box img {
+    width: 100%;
+}
+
+
+.cards-box {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.box{
+    width: 260px;
+    height: 300px;
+    box-shadow: 2px 2px 10px rgb(201, 201, 201);
+    border-radius: 15px;
+    background-image: url(../images/Rectangle4.png);
+    background-position: center;
+    background-size: cover;
+}
+.box1{
+    width: 260px;
+    height: 300px;
+    box-shadow: 2px 2px 10px rgb(201, 201, 201);
+    border-radius: 15px;
+    background-image: url(../images/Rectangle5.png);
+    background-position: center;
+    background-size: cover;
+}
+.box2{
+    width: 260px;
+    height: 300px;
+    box-shadow: 2px 2px 10px rgb(201, 201, 201);
+    border-radius: 15px;
+    background-image: url(../images/Rectangle7.png);
+    background-position: center;
+    background-size: cover;
+}
+.box3{
+    width: 260px;
+    height: 300px;
+    box-shadow: 2px 2px 10px rgb(201, 201, 201);
+    border-radius: 15px;
+    background-image: url(../images/Rectangle6.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.cards-box p {
+    font-size: 20px;
+    color: #534C64;
+    font-weight: 500;
+}
+
+.c-box p {
+    font-size: 16px;
+}
 
 
 
 
 
-  
+
 
 
 
@@ -204,7 +306,7 @@ ul a {
 /* mobile devices */
 
 @media screen and (max-width: 576px) {
-    .nav-container, ul  {
+    .nav-container, ul,.gamer-container  {
         flex-direction: column;
     }
     .logo {
@@ -242,6 +344,14 @@ ul a {
     .header-text1 {
         margin-left: 40px;
     }
+    .game-text {
+        text-align: center;
+        width: 100%;
+    }
+    .cards-box {
+        grid-template-columns: 1fr;
+    }
+
 
 }
 
@@ -266,4 +376,15 @@ ul a {
     ul {
         width: 100%;
     }
+
+    .gamer-container {
+        flex-direction: column;
+    }
+    .game-text {
+        text-align: center;
+        width: 100%;
+    }
+
+
+
 }
