@@ -280,6 +280,13 @@ ul a {
     background-position: center;
     background-size: cover;
 }
+
+
+.box1:hover {
+    outline: 4px solid rgb(255, 0, 0);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
 .box2{
     width: 260px;
     height: 300px;
@@ -289,6 +296,12 @@ ul a {
     background-position: center;
     background-size: cover;
 }
+
+.box2:hover {
+    outline: 4px solid rgb(255, 0, 0);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
 .box3{
     width: 260px;
     height: 300px;
@@ -297,6 +310,11 @@ ul a {
     background-image: url(../images/Rectangle6.png);
     background-position: center;
     background-size: cover;
+}
+.box3:hover {
+    outline: 4px solid rgb(255, 0, 0);
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .cards-box p {
@@ -443,9 +461,12 @@ ul a {
    
 }
 .game-zone1 {
-display: grid;
-grid-template-columns: repeat(5,1fr);
-gap: 2%;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 2%;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
 
 }
 
@@ -462,7 +483,7 @@ gap: 2%;
 
 .game-zone p {
     padding-left: 20px;
-    font-size: 13px;
+    font-size: 10px;
     font-weight: 600;
 }
 
@@ -472,6 +493,12 @@ gap: 2%;
     transition: 0.3s;
     
 }
+
+.gz  {
+        margin-left: 100px;
+    }
+
+
 
 .game-zone img {
     width: 15%;
@@ -694,6 +721,13 @@ footer {
     width: 10%;
 }
 
+.game-zone {
+    width: 100%;
+}
+
+.gz {
+    margin-left: 0px;
+}
 
 
 
@@ -795,5 +829,8 @@ footer {
         grid-template-columns: repeat(3,1fr);
     }
 
-
+    .gz {
+        margin-left: 0px;
+    }
+    
 }
