@@ -113,7 +113,7 @@ ul a {
     padding-left: 10px;
 }
 
-/* header section start hear */
+                /* header section start hear */
 
 .header-container {
     max-width: 1140px;
@@ -134,16 +134,12 @@ ul a {
 
 .header-img {
     width: 50%
+    
 }
 
 .header-img img {
     width: 100%;
 }
-
-/* .header-text1 img {
-    display: flex;
-    display: block;
-} */
 
 .header-text1 h2 {
     color: #0B0223;
@@ -227,6 +223,7 @@ ul a {
     font-size: 35px;
     text-align: center;
     margin-top: 50px;
+    padding-bottom: 15px;
 }
 
 .para-text {
@@ -443,9 +440,13 @@ ul a {
 .multiple-games-container {
     max-width: 1140px;
     margin: 70px auto;
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    gap: 2%;
+   
+}
+.game-zone1 {
+display: grid;
+grid-template-columns: repeat(5,1fr);
+gap: 2%;
+
 }
 
 .game-zone {
@@ -671,7 +672,7 @@ footer {
         font-size: 11px;
         padding-left: 40px;
     }
-    .multiple-games-container {
+    .game-zone1 {
         grid-template-columns: repeat(3,1fr);
     }
 
