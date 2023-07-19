@@ -243,93 +243,38 @@ ul a {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+/* ------------------------------------------------------ */
+.photo-container {
+    position: relative;
+    display: inline-block;
+    height: 200px;
+  }
+  
+  .hover-photo {
+    position: absolute;
+    top: 55%;
+    left: 35%;
+    opacity: 0;
+    /* filter: blur(5px); */
+    transition: opacity 0.3s ease;
+    width: 30%;
+    margin: auto;
+  }
+  
+  .photo-container:hover .hover-photo {
+    opacity: 1;
+  }
+  
+  .photo-container:hover .main-photo {
+    opacity: 0.7; /* Adjust the opacity as needed */
+   
+  }
 
 
-.box img {
-    width: 100%;
-}
-
-
-.cards-box {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-}
-
-
-
-.box{
-    width: 260px;
-    height: 300px;
-    box-shadow: 2px 2px 10px rgb(201, 201, 201);
-    border-radius: 15px;
-    background-image: url(../images/Rectangle4.png);
-    background-position: center;
-    background-size: cover;
-}
-.box:hover {
-    outline: 4px solid rgb(255, 0, 0);
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-
-
-
-
-.box1{
-    width: 260px;
-    height: 300px;
-    box-shadow: 2px 2px 10px rgb(201, 201, 201);
-    border-radius: 15px;
-    background-image: url(../images/Rectangle5.png);
-    background-position: center;
-    background-size: cover;
-}
-
-
-.box1:hover {
-    outline: 4px solid rgb(255, 0, 0);
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-.box2{
-    width: 260px;
-    height: 300px;
-    box-shadow: 2px 2px 10px rgb(201, 201, 201);
-    border-radius: 15px;
-    background-image: url(../images/Rectangle7.png);
-    background-position: center;
-    background-size: cover;
-}
-
-.box2:hover {
-    outline: 4px solid rgb(255, 0, 0);
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-.box3{
-    width: 260px;
-    height: 300px;
-    box-shadow: 2px 2px 10px rgb(201, 201, 201);
-    border-radius: 15px;
-    background-image: url(../images/Rectangle6.png);
-    background-position: center;
-    background-size: cover;
-}
-.box3:hover {
-    outline: 4px solid rgb(255, 0, 0);
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-
-.cards-box p {
-    font-size: 20px;
-    color: #534C64;
-    font-weight: 500;
-}
-
-.c-box p {
-    font-size: 16px;
-}
+  .cards {
+    display: flex;
+    justify-content: space-around;
+  }
 
 /* Play Instantly,No Downloads No Installs. section start  */
 
@@ -734,7 +679,9 @@ footer {
     margin-left: 0px;
 }
 
-
+.cards {
+    flex-wrap: wrap;
+}
 
 
 
