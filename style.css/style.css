@@ -246,6 +246,8 @@ ul a {
     grid-template-columns: repeat(4,1fr);
 }
 
+
+
 .box{
     width: 260px;
     height: 300px;
@@ -255,6 +257,15 @@ ul a {
     background-position: center;
     background-size: cover;
 }
+.box:hover {
+    outline: 4px solid rgb(255, 0, 0);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+
+
+
 .box1{
     width: 260px;
     height: 300px;
@@ -422,12 +433,11 @@ ul a {
 /* multiple-games section start  */
 
 .multiple-games-container {
-        max-width: 1140px;
-        margin: 70px auto;
-        display: grid;
-        grid-template-columns: repeat(5,1fr);
-        gap: 2%;
-        flex-wrap:wrap ;
+    max-width: 1140px;
+    margin: 70px auto;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 2%;
 }
 
 .game-zone {
@@ -448,9 +458,9 @@ ul a {
 }
 
 .game-zone:hover {
-    border: 1px solid #FF42A5;
+    outline: 1px solid #FF42A5;
     color: #FF42A5;
-    transition: 0.2s;
+    transition: 0.3s;
     
 }
 
@@ -479,12 +489,22 @@ footer {
 .f-logo-footer {
     display: flex;
     justify-content: center;
-    margin-left: 105px;
-}
-
-.f-logo, .f-icon {
+    align-items: center;
+    gap:10px;
     padding-bottom: 20px;
 }
+
+.f-logo-footer p {
+    color: #FFF;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.f-icon {
+    color: #FF42A5; 
+}
+
+
 
 
 
@@ -506,6 +526,8 @@ footer {
 .our-story {
     margin-bottom: 20px;
     margin-left: 20px;
+    line-height: 40px;
+    text-align: center;
 }
 
 .f-social-icons {
@@ -519,14 +541,14 @@ footer {
 }
 
 .terms-service {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    line-height: 40px;
+    text-align: center;
 }
 
 .terms-con {
-    margin-right: 25px;
+   margin: 0 30px;
 }
-
-
 
 
 
