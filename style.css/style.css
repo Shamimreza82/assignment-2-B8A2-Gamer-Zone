@@ -257,22 +257,25 @@ ul a {
     opacity: 0;
     width: 20%;
     margin: auto;
+    
   }
   
   .photo-container:hover .hover-photo {
     opacity: 1;
+
+    
   }
   
   .photo-container:hover .main-photo {
-    opacity: 0.7; 
+    opacity: 0.6; 
     filter: brightness(40%) ;
-    filter: blur(1.5px);
   }
 
 
   .cards {
     display: grid;
     grid-template-columns: repeat(4,1fr);
+   
   }
 
 /* Play Instantly,No Downloads No Installs. section start  */
