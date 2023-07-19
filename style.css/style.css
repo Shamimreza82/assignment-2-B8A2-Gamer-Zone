@@ -257,7 +257,7 @@ ul a {
     opacity: 0;
     /* filter: blur(5px); */
     transition: opacity 0.3s ease;
-    width: 30%;
+    width: 20%;
     margin: auto;
   }
   
@@ -267,13 +267,14 @@ ul a {
   
   .photo-container:hover .main-photo {
     opacity: 0.7; /* Adjust the opacity as needed */
+    filter: brightness(40%);
    
   }
 
 
   .cards {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
   }
 
 /* Play Instantly,No Downloads No Installs. section start  */
@@ -330,31 +331,6 @@ ul a {
     margin-left: -30px;
 }
 
-
-/* Play Games Online Anywhere, Anytime! section start */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* _____________________________________________________ */
 
 /* <!-- careers section start --> */
 
@@ -678,13 +654,24 @@ footer {
 .gz {
     margin-left: 0px;
 }
-
+/* ------------------------------ */
 .cards {
-    flex-wrap: wrap;
+    grid-template-columns: 1fr;
+    gap: 70px;
 }
 
+.online-game-container {
+    min-height: 1000px;
+}
+.photo-container .main-photo  {
+    width: 170px;
+    margin-left: 120px;
+}
 
-
+.c-text {
+    margin-left: 120px;
+    font-size: 10px;
+}
 }
 
 
