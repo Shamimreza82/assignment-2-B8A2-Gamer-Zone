@@ -156,6 +156,10 @@ ul a {
     -webkit-text-fill-color: transparent;
 }
 
+.header-text1 p > i {
+    padding-right: 10px;
+}
+
 .header-text1 p {
     color: #534C64;
     font-size: 15px;
@@ -666,6 +670,7 @@ footer {
 
     .d-text p {
         text-align: center;
+
     }
     .careers-text {
         width: 100%;
