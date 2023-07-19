@@ -275,8 +275,27 @@ ul a {
   .cards {
     display: grid;
     grid-template-columns: repeat(4,1fr);
-   
   }
+
+
+  .hover-text {
+    position: absolute;
+    top: 90%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0;
+    pointer-events: none; /* Prevent text from interfering with hover */
+  }
+
+  .photo-container:hover .hover-text {
+    opacity: 1;
+  }
+
+
 
 /* Play Instantly,No Downloads No Installs. section start  */
 
